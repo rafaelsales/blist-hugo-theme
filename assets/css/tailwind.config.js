@@ -17,6 +17,9 @@ module.exports = {
   },
   darkMode: "class",
   theme: {
+    fontFamily: {
+      amaranth: ['Amaranth']
+    },
     extend: {
       typography: (theme) => ({
         DEFAULT: {
