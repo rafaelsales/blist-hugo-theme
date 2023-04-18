@@ -11,8 +11,8 @@
   {{- if .Keywords }}
   <meta name="keywords" content="{{ delimit .Keywords "," }}" />
   {{ end -}}
-  {{- if .Params.Author }}
-  <meta name="author" content="{{ .Params.Author}}" />
+  {{- if or .Params.Author .Site.Params.Author }}
+  <meta name="author" content="{{ or .Params.Author .Site.Params.Author }}" />
   {{ end -}}
   
   {{ hugo.Generator }}
