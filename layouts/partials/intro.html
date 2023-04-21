@@ -8,7 +8,7 @@
       <p class="font-light text-lg">{{ .Site.Params.introSubtitle | safeHTML}}</p>
       <p class="font-light text-md mt-4">{{ .Site.Params.introSubsubtitle | safeHTML}}</p>
 
-      <div class="mt-16 text-center">
+      <div class="md:mt-16 mt-6 text-center">
         <span class="mr-8">
           <a href="{{ .Site.Params.socialInstagramLink }}" target="_blank" title="Instagram">
             <i class="fab fa-instagram text-5xl"></i>
@@ -20,7 +20,14 @@
           </a>
         </span>
       </div>
+
+      <p class="font-light text-xl mt-4 text-center">
+        <a href="{{ .Site.Params.socialInstagramLink }}" target="_blank" title="Instagram">
+          {{ .Site.Params.serviceDescription | safeHTML}}
+        </a>
+      </p>
     </div>
+
     <img class="rounded-2xl shadow-sm mx-auto" src="{{ .Site.Params.introPhoto }}" alt="{{ .Site.Title }}" />
   </div>
 </section>
