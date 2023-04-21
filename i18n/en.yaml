@@ -1,28 +1,28 @@
 # Content
 - id: postedOnDate
-  translation: "Posted on {{ . }}"
+  translation: "Publicado em {{ . }}"
 - id: lastModified
-  translation: "(Last modified on {{ . }})"
+  translation: "(Modificado em {{ . }})"
 - id: translationsLabel
-  translation: "Other languages: "
+  translation: "Outras línguas: "
 - id: translationsSeparator
   translation: ", "
 - id: readMore
-  translation: "Read More"
+  translation: "Leia mais."
 - id: morePosts
-  translation: "More Posts"
+  translation: "Mais publicações"
 - id: olderPosts
-  translation: "Older Posts"
+  translation: "Publicações antigas"
 - id: newerPosts
-  translation: "Newer Posts"
+  translation: "Publicações novas"
 - id: previousPost
-  translation: "Previous Post"
+  translation: "Próxima publicação"
 - id: nextPost
-  translation: "Next Post"
+  translation: "Publicação anterior"
 - id: readTime
-  translation: "minutes"
+  translation: "minutos"
 - id: words
-  translation: "words"
+  translation: "palavras"
 
 
 # 404 page
@@ -69,4 +69,4 @@
 
 # Related posts
 - id: seeAlso
-  translation: "See also"
+  translation: "Veja também"
