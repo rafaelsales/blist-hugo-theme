@@ -13,9 +13,9 @@
   </div>
   {{ end }}
 
-  <article class="max-w-2xl prose-sm md:prose-md mx-auto my-8 dark:prose-dark px-4">
+  <article class="max-w-2xl prose-sm md:prose-md text-xl mx-auto my-8 dark:prose-dark px-4">
 
-    <h1 class="text-xl font-bold mb-2">{{ .Title }}</h1>
+    <h2 class="text-xl font-bold mb-2">{{ .Title }}</h2>
     {{ if not (or (or .Site.Params.hideMeta .Params.hideMeta) false) }}
     <h5 class="text-sm flex items-center flex-wrap">
       <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
