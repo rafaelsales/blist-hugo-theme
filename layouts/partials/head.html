@@ -7,7 +7,7 @@
   <title>
   {{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}
   </title>
-  <link rel="canonical" href="{{ .Site.BaseURL }}" />
+  <link rel="canonical" href="{{ .Permalink }}" />
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}" />
   {{- if or .Keywords .Site.Params.Keywords }}
   <meta name="keywords" content="{{ or (delimit .Keywords ",") .Site.Params.Keywords }}" />
