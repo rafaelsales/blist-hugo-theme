@@ -29,6 +29,7 @@
     </div>
 
     {{ $image := (resources.Get .Site.Params.introPhoto).Resize "480x webp q100" }}
+    <meta property="og:image" content="{{ $image.Permalink }}"/>
     <img src="{{ $image.Permalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ .Site.Title }}" class="rounded-2xl shadow-sm mx-auto h-auto"/>
   </div>
 </section>
