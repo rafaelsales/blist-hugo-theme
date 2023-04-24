@@ -28,6 +28,7 @@
       </p>
     </div>
 
-    <img class="rounded-2xl shadow-sm mx-auto" src="{{ .Site.Params.introPhoto }}" alt="{{ .Site.Title }}" />
+    {{ $image := (resources.Get .Site.Params.introPhoto).Resize "480x webp q100" }}
+    <img src="{{ $image.Permalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ .Site.Title }}" class="rounded-2xl shadow-sm mx-auto h-auto"/>
   </div>
 </section>

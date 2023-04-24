@@ -1,7 +1,8 @@
 <header class="container flex justify-between md:justify-between gap-4 flex-wrap p-4 mx-auto relative">
   <a href="{{ .Site.Home.Permalink }}" class="capitalize font-extrabold text-2xl">
     {{ if .Site.Params.logo }}
-    <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" class="h-12 max-w-full" />
+    {{ $image := (resources.Get .Site.Params.logo).Resize "x192 webp q95" }}
+    <img src="{{ $image.Permalink }}" alt="{{ .Site.Title }}" class="h-12 max-w-full"/>
     {{ else }}
     {{ .Site.Title }}
     {{ end }}

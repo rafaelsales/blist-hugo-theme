@@ -1,6 +1,7 @@
 const themeDir = __dirname + "/../../";
 
 module.exports = {
+  important: true,
   purge: {
     enabled: process.env.HUGO_ENVIRONMENT === "production",
     content: [
